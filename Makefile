@@ -1,14 +1,15 @@
 CFLAGS    = -Wall -Wextra -std=c99 -pedantic-errors -O2
 LIBS      = -lm
-TARGET    = berry
+TARGET    ?= berry
 CC        = gcc
 MKDIR     = mkdir
 LFLAGS    = 
+BUILDDIR  ?= default
 
-INCPATH   = src default
-SRCPATH   = src default
+INCPATH   = src $(BUILDDIR)
+SRCPATH   = src $(BUILDDIR)
 GENERATE  = generate
-CONFIG    = default/berry_conf.h
+CONFIG    = $(BUILDDIR)/berry_conf.h
 COC		  = tools/coc/coc
 CONST_TAB = $(GENERATE)/be_const_strtab.h
 MAKE_COC  = $(MAKE) -C tools/coc
