@@ -1,3 +1,9 @@
+## callbackfunction_test
+Build cbftest with
+```bash
+TARGET=cbf_test BUILDDIR=cbftest make
+```
+---
 <p align="center">
   <h1 align="center">
     <img src="https://gitee.com/mirrors/Berry/raw/master/berry-logo.png" alt="Berry" width=272 height=128>
@@ -94,6 +100,7 @@ Berry's EBNF grammar definition: [tools/grammar/berry.ebnf](./tools/grammar/berr
 
    ```
    make
+   TARGET=cbf_test BUILDDIR=cbftest make
    ```
 
 3. Run:
@@ -101,6 +108,8 @@ Berry's EBNF grammar definition: [tools/grammar/berry.ebnf](./tools/grammar/berr
    ``` bash
    ./berry # Bash or PowerShell
    berry   # Windows CMD
+   ./cbf_test # Bash or PowerShell
+   cbf_test   # Windows CMD
    ```
 
 4. Install (Only Unix-like):
