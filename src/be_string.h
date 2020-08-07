@@ -48,6 +48,7 @@ int be_eqstr(bstring *s1, bstring *s2);
 bstring* be_newstr(bvm *vm, const char *str);
 bstring* be_newstrn(bvm *vm, const char *str, size_t len);
 bstring* be_newlongstr(bvm *vm, const char *str, size_t len);
+bstring* createstrobj(bvm *vm, size_t len, int islong);
 void be_gcstrtab(bvm *vm);
 uint32_t be_strhash(const bstring *s);
 const char* be_str2cstr(const bstring *s);

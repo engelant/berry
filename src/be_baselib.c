@@ -9,6 +9,7 @@
 #include "be_exec.h"
 #include "be_mem.h"
 #include "be_gc.h"
+#include "be_libs.h"
 #include <string.h>
 
 #define READLINE_STEP       100

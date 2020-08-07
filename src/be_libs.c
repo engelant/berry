@@ -20,6 +20,8 @@ void be_loadlibs(bvm *vm)
     be_load_listlib(vm);
     be_load_maplib(vm);
     be_load_rangelib(vm);
+    #if BE_USE_FILE_SYSTEM
     be_load_filelib(vm);
+    #endif
 #endif
 }
